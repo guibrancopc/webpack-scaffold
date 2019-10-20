@@ -5,7 +5,7 @@
 ## Features available
 
 * Webpack Development mode; :heavy_check_mark: 
-* Webpack Production mode; :clock4:
+* Webpack Production mode; :heavy_check_mark:
 * ES6 Compatibility; :clock4:
 * Unit test suite with Jest; :clock4:
 * Coverage Report; :clock4:
