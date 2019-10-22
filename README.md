@@ -8,6 +8,6 @@
 * Webpack Production mode; :heavy_check_mark:
 * ES6 Compatibility; :heavy_check_mark:
 * Vue.js Compatibility (Single File Component) :heavy_check_mark:
-* Unit test suite with Jest; :clock4:
+* Unit test suite with Jest with Vue.js compatibility; :heavy_check_mark:
 * Coverage Report; :clock4:
 * Linter. :clock4:
