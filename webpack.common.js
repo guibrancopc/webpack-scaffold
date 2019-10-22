@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /*
 * This is kind of Webpack mixin and will be merged with other config files
 */
@@ -11,9 +12,13 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.js$/, use: 'babel-loader' },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+      },
       { test: /\.vue$/, use: 'vue-loader' },
-      { test: /\.css$/, use: ['vue-style-loader', 'css-loader']},
+      { test: /\.css$/, use: ['vue-style-loader', 'css-loader'] },
       {
         test: /\.html$/,
         use: ['html-loader']
@@ -24,13 +29,13 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[hash].[ext]',
-            outputPath: 'assets/images'
-          }
-        }
-      }
-    ]
+            outputPath: 'assets/images',
+          },
+        },
+      },
+    ],
   },
   plugins: [
     new VueLoaderPlugin(),
-  ]
+  ],
 };

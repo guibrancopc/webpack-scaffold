@@ -2,6 +2,7 @@
   <div>
     <h1>Webpack Scaffold</h1>
     <h3>A great way to organize your project without much abstraction.</h3>
+    <small>With Vue.js compatibility! \o/</small>
     <div>
       <img class="webpack-logo rotating" :src="logo" alt="Webpack Logo">
     </div>
