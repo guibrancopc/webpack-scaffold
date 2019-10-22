@@ -4,8 +4,9 @@
   "description": "A scaffold with the power of Webpack to start your project without Webpack abstraction.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --color --progress --config webpack.dev.js --open",
-    "build": "webpack  --color --progress --config webpack.prod.js",
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build:only": "webpack --config webpack.prod.js --production",
+    "build": "webpack --config webpack.prod.js --production && npm run dist",
     "test": "jest --notify --config=jest.config.js",
     "cov": "node static-server.js tests/unit/coverage/lcov-report",
     "dist": "node static-server.js dist"
