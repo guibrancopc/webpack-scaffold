@@ -56,7 +56,7 @@ module.exports = merge(webpackCommon, {
       {
         test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader, // 3. Extract CSS into files and place it as static file in head
+          MiniCssExtractPlugin.loader, // 3. Extract CSS in files and put it as static file in head
           'css-loader', // 2. Turns CSS into common.js
           'sass-loader', // 1. Turns sass into css
         ],

@@ -8,7 +8,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 module.exports = {
   entry: {
     main: './src/main.js',
-    vendor: './src/vendor.js'
+    vendor: './src/vendor.js',
   },
   module: {
     rules: [
@@ -21,7 +21,7 @@ module.exports = {
       { test: /\.css$/, use: ['vue-style-loader', 'css-loader'] },
       {
         test: /\.html$/,
-        use: ['html-loader']
+        use: ['html-loader'],
       },
       {
         test: /\.(svg|png|jpe?g|gif)$/,

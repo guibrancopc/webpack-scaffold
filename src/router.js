@@ -14,6 +14,7 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
+      /* Lazy loading mode */
       component: () => import(/* webpackChunkName: "about" */ './pages/about/about.vue'),
     },
   ],
