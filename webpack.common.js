@@ -2,13 +2,18 @@
 * This is kind of Webpack mixin and will be merged with other config files
 */
 
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
+
 module.exports = {
   entry: {
-    main: './src/index.js',
+    main: './src/main.js',
     vendor: './src/vendor.js'
   },
   module: {
     rules: [
+      { test: /\.js$/, use: 'babel-loader' },
+      { test: /\.vue$/, use: 'vue-loader' },
+      { test: /\.css$/, use: ['vue-style-loader', 'css-loader']},
       {
         test: /\.html$/,
         use: ['html-loader']
@@ -24,5 +29,8 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [
+    new VueLoaderPlugin(),
+  ]
 };

@@ -2,7 +2,6 @@
 * This is the Webpack production config version and requires the webpack.common.js to work
 */
 
-
 const path = require('path');
 const webpackCommon = require('./webpack.common');
 const merge = require('webpack-merge');
