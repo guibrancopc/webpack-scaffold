@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    jest: true,
   },
   extends: [
     'plugin:vue/essential',
@@ -14,6 +15,7 @@ module.exports = {
   },
   plugins: [
     'vue',
+    'jest'
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
