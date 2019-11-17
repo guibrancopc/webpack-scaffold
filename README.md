@@ -14,37 +14,38 @@
 
 ## Commands
 
-### `At first`
-
+### At first
+```
 ~ npm install
+```
 
-### `Development server`
-
+### Development server
+```
 ~ npm start
-
-### `Unit tests`
-
+```
+### Unit tests
+```
 ~ npm test
-
-### `Serve coverage report`
-
+```
+### Serve coverage report
+```
 ~ npm run cov
-
-### `Build for production`
-
+```
+### Build for production
+```
 ~ npm run build:only
-
-### `Serve dist folder`
+```
+### Serve dist folder
 
 *It's required the build command once at least.*
-
+```
 ~ npm run dist
-
-### `Build for production and serve dist folder in sequence`
-
+```
+### Build for production and serve dist folder in sequence
+```
 ~ npm run build
-
-### `Linter report in console`
-
+```
+### Linter report in console
+```
 ~ npm run format
-
+```
