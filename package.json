@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --open",
-    "build:only": "webpack --config webpack.prod.js --production",
-    "build": "npm run build:only && npm run dist",
+    "build": "webpack --config webpack.prod.js --production",
+    "build:run": "npm run build && npm run dist",
     "test": "jest --notify --config=jest.config.js",
-    "cov": "node static-server.js tests/unit/coverage/lcov-report",
-    "dist": "node static-server.js dist",
+    "cov": "node static-server.js tests/unit/coverage/lcov-report 8090",
+    "dist": "node static-server.js dist 8091",
     "format": "eslint \"src/**/*.{js,vue}\""
   },
   "repository": {
