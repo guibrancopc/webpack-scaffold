@@ -10,7 +10,8 @@
     "test": "jest --notify --config=jest.config.js",
     "cov": "node static-server.js tests/unit/coverage/lcov-report 8090",
     "dist": "node static-server.js dist 8091",
-    "format": "eslint \"src/**/*.{js,vue}\""
+    "format": "eslint \"src/**/*.{js,vue}\"",
+    "format:fix": "eslint --fix \"src/**/*.{js,vue}\""
   },
   "repository": {
     "type": "git",
