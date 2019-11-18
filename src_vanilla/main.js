@@ -1,5 +1,5 @@
 /*
-* Here is the index of JavaScript. 
+* Here is the index of JavaScript.
 * Webpack will run your entire application
 * through this file.
 */
