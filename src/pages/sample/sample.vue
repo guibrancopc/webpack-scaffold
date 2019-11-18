@@ -10,15 +10,15 @@
 </template>
 
 <script>
-import logo from './../../assets/images/webpack.svg';
+import logo from '../../assets/images/webpack.svg';
 
 export default {
   data() {
     return {
       logo,
-    }
-  }  
-}
+    };
+  },
+};
 </script>
 
 <style lang="scss">

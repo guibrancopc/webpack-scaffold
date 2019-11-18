@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import Sample from './../sample.vue';
+import Sample from '../sample.vue';
 
 describe('Sample Page', () => {
   it('should render logo image', () => {

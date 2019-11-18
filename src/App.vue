@@ -1,7 +1,8 @@
 <template>
   <div id="app" class="container">
     <nav class="nav">
-      <router-link to="/">Home</router-link> | 
+      <router-link to="/">Home</router-link>
+      <span> | </span>
       <router-link to="/about">About</router-link>
     </nav>
     <main>
@@ -14,7 +15,7 @@
 .container {
   padding-top: 50px;
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Verdana;
 }
 
 .nav a {
